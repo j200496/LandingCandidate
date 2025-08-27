@@ -1,0 +1,39 @@
+.card-img-top{
+    cursor: pointer ;
+}
+.card-img-fixed {
+  height: 250px;         /* el alto fijo que quieras */
+  object-fit: cover;     /* recorta sin deformar */
+  width: 100%;           /* que ocupe todo el ancho del card */
+  border-top-left-radius: 0.5rem;  /* opcional, para que siga el estilo bootstrap */
+  border-top-right-radius: 0.5rem;
+}
+
+.sd{
+    padding: 8%;
+}
+.fm{
+    margin-top: 5%;
+}
+.whatsapp-float {
+    position: fixed; /* Se mantiene fijo en la pantalla */
+    width: 60px;
+    height: 60px;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la parte derecha */
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(177, 168, 168, 0.3);
+    z-index: 1000; /* Se mantiene sobre otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+background-color: #1ebc5d;
+}

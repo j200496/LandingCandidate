@@ -1,0 +1,25 @@
+<h2 class="text-center text-primary fw-bold fst-italic">Unete a nosotros</h2>
+<form [formGroup]="usuariosform" (submit)="guardar()" >
+ <!--  <select class=" form form-control mb-3" formControlName="provincia">
+    <option value="Elija la provincia">Elija la provincia</option>
+    @for(p of provincias; track p.idProvincia){
+      <option [value]="p.nombre">{{p.nombre}}</option>
+    }
+  </select>-->
+ <select class=" form form-control mb-3" formControlName="provincia">
+    <option value="">Elija el sector</option>
+    @for(p of arrayprovincias; track $index){
+      <option [value]="">{{p}}</option>
+    }
+  </select>
+
+    <input class="form form-control rounded-5 mb-3" formControlName="nombre" type="text" placeholder="Nombre">
+    <input class="form form-control rounded-5 mb-3" formControlName="telefono"  type="text" placeholder="Telefono">
+     <input class="form form-control rounded-5 mb-3" formControlName="direccion" type="text" placeholder="Direccion">
+    <input class="form form-control rounded-5 mb-3" formControlName="cedula" type="text" placeholder="Cédula con guiones">
+<span class="text-danger mb-3" *ngIf="usuariosform.controls['cedula'].errors?.['minlength']">
+  El campo cedula requiere mínimo 11 caracteres
+</span>
+     <button type="submit" class="btn btn-primary w-100 mt-2 rounded-5" >Enviar</button>
+</form>
+
