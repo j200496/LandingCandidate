@@ -24,4 +24,13 @@ return Swal.fire({
   confirmButtonColor: btncolor,
 });
  }
+  error(title:string, text:string, btncolor:string){
+return Swal.fire({
+  title: title,
+  text: text,
+  icon: "error",
+  confirmButtonText:'aceptar',
+  confirmButtonColor: btncolor,
+});
+ }
 }

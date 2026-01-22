@@ -32,7 +32,7 @@ usuariosform = new FormGroup({
   nombre: new FormControl(""),
   telefono: new FormControl(""),
   direccion: new FormControl(''),
-  cedula: new FormControl("",[Validators.required,Validators.minLength(11)]),
+  colegioelectoral: new FormControl(""),
   provincia: new FormControl('Elija la provincia'),
 })
 ngOnInit(): void {
@@ -41,16 +41,16 @@ ngOnInit(): void {
   })*/
 }
 guardar(){
-  const {nombre,telefono,direccion,cedula,provincia} = this.usuariosform.value;
-  if(!nombre || !telefono || !direccion || !cedula || !provincia){
-    this.service.warning("Todos los campos son requeridos","Error","red");
+  const {nombre,telefono,direccion,colegioelectoral,provincia} = this.usuariosform.value;
+  if(!nombre || !telefono || !direccion || !colegioelectoral || !provincia){
+    this.service.error("Todos los campos son requeridos","Error","red");
     return;
   }
-  if(cedula.length < 11){
+  if(colegioelectoral.length < 11){
   this.service.warning("Error","El campo cedula requiere 11 caracteres!","red");
   return;
   }
-  if(!cedula.includes('-')){
+  if(!colegioelectoral.includes('-')){
       this.service.warning("El campo cedula debe incluir guion","Ejemplo: -","red");
     return;
   }
