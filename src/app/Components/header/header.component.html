@@ -1,34 +1,55 @@
- <nav class="navbar navbar-expand-lg container-fluid p-4" style="position: fixed; z-index: 1000; background-color: rgba(16, 134, 45, 0.733);" id="inicio">
-        <div class="container-fluid">
-               <span class="navbar-brand text-white fw-bold fst-italic ms-2">
-    <img src="/images/logofupu.png" style="border-radius: 50%; object-fit: cover; cursor: pointer;" routerLink="/layout/home" width="60" height="50" alt=""> 
-    </span>
-         <div class="row justify-content-center">
-                 <div class="col-12 col-lg-12 mt-4">
-                  <span style="color: rgb(255, 255, 255); font-size: large; margin-bottom: 80%;" class="fw-bold fst-italic" >Candidato 2028</span>
-                </div>
-         </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto fw-bold" data-bs-target=".navbar-collapse.show">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#propuestas">Propuestas al congreso</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contacto">Contacto</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#escribenos">Escribenos</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#formu">Unete a nosotros</a>
-              </li>     
-                <li class="nav-item">
-                <a class="nav-link text-white" routerLink="/layout/home">Home</a>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+<nav
+  class="navbar navbar-expand-lg fixed-top py-3"
+  id="inicio"
+>
+  <div class="container">
+
+    <!-- Logo + título -->
+    <a class="navbar-brand d-flex align-items-center gap-2 text-white fw-bold fst-italic"
+       routerLink="/layout/home">
+
+      <img
+        src="/images/logofupu.png"
+        width="60"
+        height="50"
+        loading="lazy"
+        alt="Logo Candidato"
+        class="rounded-circle object-fit-cover"
+      />
+
+      <span class="d-none d-md-inline">Candidato 2028</span>
+    </a>
+
+    <!-- Botón mobile -->
+    <button
+      class="navbar-toggler text-white"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-bold text-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#propuestas">Propuestas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#escribenos">Escríbenos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#formu">Únete</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

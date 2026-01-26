@@ -4,3 +4,36 @@
 a{
     cursor: pointer;
 }
+#inicio {
+  background-color: rgba(32, 129, 56, 0.767);
+  backdrop-filter: blur(6px);
+}
+
+/* Icono hamburguesa visible */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Hover moderno */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
