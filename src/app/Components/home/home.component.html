@@ -2,46 +2,56 @@
   <app-header></app-header>
 </header>
 <section class="sd position-relative">
+  <!-- Imagen hero optimizada -->
   <img
     src="/images/sdcity.jpeg"
-    loading="lazy"
+    fetchpriority="high"
+    decoding="async"
     class="bg-img"
     alt="Santo Domingo"
-  >
-  <div class="container">
-    <a href="" class="whatsapp-float" target="_blank">
+  />
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <div class="container position-relative z-1">
+    <a
+      href="https://wa.me/18090000000"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
       <i class="bi bi-whatsapp"></i>
     </a>
-    <div class="row justify-content-start fm">
-      <div class="col-12">
-        <h3 class="mt-4" style="color: rgb(5, 255, 5);">Conoce nuestras</h3>
-        <h2 class="fw-bold fst-italic" style="font-size: 50px; color: rgb(22, 250, 1);">
-          Propuestas al congreso
-        </h2>
-        <div class="row justify-content-start">
-          <div class="col-lg-4 col-12">
-            <h3 class=" text-center mt-3 lead"  style="color: rgb(146, 255, 83);">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim
-              aut debitis ea tenetur, delectus, aspernatur fuga omnis, non sed
-              deserunt ipsum quam cum provident quis. Ab doloribus neque veniam.
-            </h3>
-          </div>
-          <div class="row justify-content-start mt-4">
-            <div class="col-lg-8 col-12">
-              <button class="btn text-white  w-50 mb-5 rounded-5" style="background-color: rgba(0, 128, 0, 0.719);" routerLink="/layout/prop">
-                Ver mas
-              </button>
-            </div>
-          </div>
-        </div>
+
+    <div class="row align-items-center min-vh-75">
+      <div class="col-lg-6 col-12">
+        <h3 class="text-success mb-2">Conoce nuestras</h3>
+
+        <h1 class="hero-title fw-bold fst-italic">
+          Propuestas al Congreso
+        </h1>
+
+        <p class="hero-text mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim
+          aut debitis ea tenetur delectus aspernatur fuga omnis.
+        </p>
+
+        <button
+          class="btn btn-success px-5 py-2 rounded-pill mt-3"
+          routerLink="/layout/prop"
+        >
+          Ver más
+        </button>
       </div>
     </div>
   </div>
 </section>
+
 <section>
   <div class="container">
     <div class="row justify-content-start mt-4">
-          <div class="col-lg-6 col-12">
+      <div class="col-lg-6 col-12">
         <h1 class="fw-bold text-success">Mensaje del candidato</h1>
         <p class="lead" style="text-align: justify" data-aos="fade-down-left">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
@@ -62,12 +72,14 @@
           aliquam enim quasi quidem ipsam illo?
         </p>
       </div>
-        <div class="col-lg-6 col-12 mt-4">
+      <div class="col-lg-6 col-12 mt-4">
         <img
-          src="images/politicomexinaco.jpg" loading="lazy"
-          width="600"
-          alt=""
-          class="mb-4 img-fluid"
+          src="images/politicomexinaco.jpg"
+          loading="lazy"
+  width="600"
+  height="700"
+  class="img-fluid rounded shadow"
+  alt="Mensaje del candidato"
         />
       </div>
     </div>
@@ -76,18 +88,24 @@
 <section class="bg-success sc" id="propuestas">
   <div class="container">
     <div class="row justify-content-center">
-    <div class="col-lg-4 col-md-6 col-12 container">
-      <h1 class="text-white fw-bold fst-italic mt-4" style="font-size: 30px">
-        Propuestas al congreso
-      </h1>
+      <div class="col-lg-4 col-md-6 col-12 container">
+        <h1 class="text-white fw-bold fst-italic mt-4" style="font-size: 30px">
+          Propuestas al congreso
+        </h1>
+      </div>
     </div>
-  </div>
   </div>
   <div class="container mb-3">
     <div class="row justify-content-center container mb-3">
       <div class="col-12 mt-4 col-md-6 col-lg-6" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-          <img src="images/economy.jpg" loading="lazy" routerLink="/layout/p1" class="card-img-top img-fluid card-img-fixed" alt="..." />
+          <img
+            src="images/economy.jpg"
+            width="600"
+    height="400"
+    class="card-img-top img-fluid card-img-fixed"
+    alt="Economía"
+          />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Economia
@@ -97,7 +115,14 @@
       </div>
       <div class="col-12 mt-4 col-md-6 col-lg-6" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-         <img src="images/security.jpg" loading="lazy" routerLink="/layout/p2" class="card-img-top img-fluid card-img-fixed" alt="..." />
+          <img
+            src="images/security.jpg"
+            loading="lazy"
+            width="600"
+    height="400"
+    class="card-img-top img-fluid card-img-fixed"
+    alt="Seguridad"
+          />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Seguridad ciudadana
@@ -107,7 +132,13 @@
       </div>
       <div class="col-12 mt-4 col-md-6 mb-4 col-lg-6" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-         <img src="images/ir.jpg" loading="lazy" routerLink="/layout/p3" class="card-img-top img-fluid card-img-fixed" alt="..." />
+          <img
+            src="images/ir.jpg"
+            width="600"
+    height="400"
+    class="card-img-top img-fluid card-img-fixed"
+    alt="Relaciones internacionales"
+          />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Relaciones internacionales
@@ -117,7 +148,13 @@
       </div>
       <div class="col-12 mt-4 col-md-6 col-lg-6 mb-4" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-          <img src="images/sh.jpg" loading="lazy" routerLink="/layout/p4" class="card-img-top img-fluid card-img-fixed" alt="..." />
+          <img
+            src="images/sh.jpg"
+            width="600"
+    height="400"
+    class="card-img-top img-fluid card-img-fixed"
+    alt="Programas sociales"
+          />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Programas sociales
@@ -132,7 +169,9 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-2 col-md-3 col-5">
-        <h2 class="mt-5 text-success fw-bold fst-italic" id="Escribenos">Escribenos</h2>
+        <h2 class="mt-5 text-success fw-bold fst-italic" id="Escribenos">
+          Escribenos
+        </h2>
       </div>
     </div>
     <div class="row justify-content-start">
@@ -174,26 +213,29 @@
   </div>
 </section>
 <section class="">
-  <div
-    id="carouselExampleAutoplaying"
-    class="carousel slide"
-    data-bs-ride="carousel"
-  >
+ <div
+  id="carouselExampleAutoplaying"
+  class="carousel slide"
+  data-bs-ride="carousel"
+  data-bs-interval="5000"
+  data-bs-pause="hover"
+>
+
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/carr1.jpg" class="d-block w-100 img-fluid" alt="..." />
+        <img src="images/carr1.jpg" loading="lazy" class="d-block w-100" alt="..." />
       </div>
       <div class="carousel-item">
         <img
           src="images/carr2.webp"
-          class="d-block w-100 img-fluid"
+          loading="lazy" class="d-block w-100"
           alt="..."
         />
       </div>
       <div class="carousel-item">
         <img
           src="images/carr3.jfif"
-          class="d-block w-100 img-fluid"
+          loading="lazy" class="d-block w-100"
           alt="..."
         />
       </div>
@@ -222,7 +264,7 @@
   <div class="container">
     <div class="row justify-content-center mt-4">
       <div class="col-md-8">
-       <app-form></app-form>
+        <app-form></app-form>
       </div>
     </div>
   </div>

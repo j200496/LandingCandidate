@@ -46,3 +46,36 @@
 .whatsapp-float:hover {
 background-color: #1ebc5d;
 }
+.sd {
+  min-height: 85vh;
+}
+
+.bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.15)
+  );
+  z-index: -1;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: #16fa01;
+}
+
+.hero-text {
+  color: #b8ff8a;
+  font-size: 1.1rem;
+}
