@@ -1,14 +1,13 @@
 <header>
   <app-header></app-header>
 </header>
-<section
-  class="sd"
-  style="
-    background-image: url(images/sdcity.jpeg);
-    width: 100%;
-    background-size: cover;
-  "
->
+<section class="sd position-relative">
+  <img
+    src="/images/sdcity.jpeg"
+    loading="lazy"
+    class="bg-img"
+    alt="Santo Domingo"
+  >
   <div class="container">
     <a href="" class="whatsapp-float" target="_blank">
       <i class="bi bi-whatsapp"></i>
@@ -21,7 +20,7 @@
         </h2>
         <div class="row justify-content-start">
           <div class="col-lg-4 col-12">
-            <h3 class=" text-center mt-3 lead"  style="color: rgb(18, 44, 3);">
+            <h3 class=" text-center mt-3 lead"  style="color: rgb(146, 255, 83);">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim
               aut debitis ea tenetur, delectus, aspernatur fuga omnis, non sed
               deserunt ipsum quam cum provident quis. Ab doloribus neque veniam.
@@ -65,7 +64,7 @@
       </div>
         <div class="col-lg-6 col-12 mt-4">
         <img
-          src="images/politicomexinaco.jpg"
+          src="images/politicomexinaco.jpg" loading="lazy"
           width="600"
           alt=""
           class="mb-4 img-fluid"
@@ -88,7 +87,7 @@
     <div class="row justify-content-center container mb-3">
       <div class="col-12 mt-4 col-md-6 col-lg-6" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-          <img src="images/economy.jpg" routerLink="/layout/p1" class="card-img-top img-fluid card-img-fixed" alt="..." />
+          <img src="images/economy.jpg" loading="lazy" routerLink="/layout/p1" class="card-img-top img-fluid card-img-fixed" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Economia
@@ -98,7 +97,7 @@
       </div>
       <div class="col-12 mt-4 col-md-6 col-lg-6" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-         <img src="images/security.jpg" routerLink="/layout/p2" class="card-img-top img-fluid card-img-fixed" alt="..." />
+         <img src="images/security.jpg" loading="lazy" routerLink="/layout/p2" class="card-img-top img-fluid card-img-fixed" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Seguridad ciudadana
@@ -108,7 +107,7 @@
       </div>
       <div class="col-12 mt-4 col-md-6 mb-4 col-lg-6" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-         <img src="images/ir.jpg" routerLink="/layout/p3" class="card-img-top img-fluid card-img-fixed" alt="..." />
+         <img src="images/ir.jpg" loading="lazy" routerLink="/layout/p3" class="card-img-top img-fluid card-img-fixed" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Relaciones internacionales
@@ -118,7 +117,7 @@
       </div>
       <div class="col-12 mt-4 col-md-6 col-lg-6 mb-4" data-aos="fade-down">
         <div class="card cb bg-transparent" id="card">
-          <img src="images/sh.jpg" routerLink="/layout/p4" class="card-img-top img-fluid card-img-fixed" alt="..." />
+          <img src="images/sh.jpg" loading="lazy" routerLink="/layout/p4" class="card-img-top img-fluid card-img-fixed" alt="..." />
           <div class="card-body">
             <h5 class="card-title text-white fst-italic text-center">
               Programas sociales
@@ -228,49 +227,6 @@
     </div>
   </div>
 </section>
-<section class="mt-4">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6 mt-5">
-        <h2 class="text-success fst-italic" id="contacto">Siguenos en nuestras redes sociales!</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center mt-4">
-      <div class="col-lg-3 col-md-3 col-3" data-aos="flip-right">
-        <h2 class="text-warning"style="font-size: 250%;">
-          <a href="">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </h2>
-        <p class="text-dark fw-bold"></p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-3" data-aos="flip-left">
-        <h2 class="text-warning" style="font-size: 250%;">
-          <a style="color: rgb(253, 50, 145)" href=""
-            ><i class="bi bi-instagram"></i>
-          </a>
-        </h2>
-        <p class="text-dark fw-bold"></p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-2" data-aos="flip-right">
-        <h2 class="text-warning" style="font-size: 250%;">
-          <a style="color: rgb(37, 32, 32)" href=""
-            ><i class="bi bi-twitter-x"></i
-          ></a>
-        </h2>
-        <p class="text-dark fw-bold"></p>
-      </div><div class="col-lg-1 col-md-1 col-2" data-aos="flip-right">
-        <h2 class="text-warning" style="font-size: 250%;">
-          <a style="color: rgb(248, 12, 12)" href=""
-            ><i class="bi bi-youtube"></i
-          ></a>
-        </h2>
-        <p class="text-dark fw-bold"></p>
-      </div>
-
-    </div>
-  </div>
-</section>
-<section class="mt-3">
+<section class="mt-5">
   <app-footer></app-footer>
 </section>

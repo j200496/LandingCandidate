@@ -4,6 +4,8 @@ import { HeaderComponent } from "../header/header.component";
 import { FormComponent } from "../form/form.component";
 import { NavigationEnd, Router, RouterLink, RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { NgOptimizedImage } from '@angular/common';
+
 
 @Component({
   selector: 'app-home',
