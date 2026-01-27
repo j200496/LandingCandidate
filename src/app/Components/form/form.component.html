@@ -1,7 +1,7 @@
-<h2 class="text-center text-success fw-bold fst-italic">Unete a nosotros <img src="/images/logofupu.png" width="50" style="border-radius: 50%;"></h2>
+<h2 class="text-center text-success fw-bold fst-italic">Unete a nosotros <img src="/images/logofupu.png" width="35" style="border-radius: 50%;"></h2>
 <form [formGroup]="usuariosform" (submit)="guardar()" >
  <select class=" form form-control mb-3" formControlName="provincia">
-    <option value="">Elija el sector</option>
+    <option value="">Elije el terrotorio</option>
     @for(p of arrayprovincias; track $index){
       <option [value]="">{{p}}</option>
     }
