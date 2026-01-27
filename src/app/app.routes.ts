@@ -16,19 +16,19 @@ export const routes: Routes = [
     path: 'layout', component: LayoutComponent,
     children: [
       {
-        path:'p1', component: P1Component
+        path:'economia', component: P1Component
       },
       {
         path:'home',component:HomeComponent
       },
       {
-        path:'p2',component:P2Component
+        path:'seguridad',component:P2Component
       },   
      {
-        path:'p3',component:P3Component
+        path:'RelIntern',component:P3Component
       },
       {
-        path:'p4',component:P4Component
+        path:'PSociales',component:P4Component
       },
       {
         path:'prop',component:PropComponent
